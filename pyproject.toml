@@ -10,6 +10,9 @@ based_on_style = "pep8"
 indent_width = 4
 column_limit = 100
 
+[tool.isort]
+line_length = 100
+
 [project]
 name = "mmaudio"
 version = "1.0.0"
@@ -45,6 +48,7 @@ dependencies = [
   'open_clip_torch >= 2.29.0',
   'av >= 14.0.1',
   'timm >= 1.0.12',
+  'python-dotenv',
 ]
 
 [tool.hatch.build.targets.wheel]

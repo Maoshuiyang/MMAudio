@@ -14,8 +14,8 @@ ext_weights
 .checkpoints/
 .vscode/
 training/example_output/
-testset/
 testset
+testset/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
