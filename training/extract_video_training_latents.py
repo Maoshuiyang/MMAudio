@@ -36,7 +36,8 @@ mode = '16k'
 # bigvgan_path = None
 # mode = '44k'
 
-synchformer_ckpt = './ext_weights/synchformer_state_dict.pth'
+# synchformer_ckpt = './ext_weights/synchformer_state_dict.pth'
+synchformer_ckpt = '/root/autodl-tmp/av-benchmark/weights/synchformer_state_dict.pth'
 
 # per-GPU
 BATCH_SIZE = 16

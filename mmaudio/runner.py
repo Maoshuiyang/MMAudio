@@ -55,7 +55,8 @@ class Runner:
         self.duration_sec = self.seq_cfg.duration
 
         # setting up the model
-        empty_string_feat = torch.load('./ext_weights/empty_string.pth', weights_only=True)[0]
+        # empty_string_feat = torch.load('./ext_weights/empty_string.pth', weights_only=True)[0]
+        empty_string_feat = None
         self.network = DDP(get_my_mmaudio(cfg.model,
                                           latent_mean=latent_mean,
                                           latent_std=latent_std,
