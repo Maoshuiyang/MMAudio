@@ -19,8 +19,8 @@ duration = 20
 
 music_threshold = 0.5
 speech_threshold = 0.5
-here = os.path.dirname(os.path.abspath(__file__))
-pseudo_model_path = os.path.join(here, 'models', 'TVSM-pseudo', 'epoch=28-step=67192.ckpt.torch.pt')
+# here = os.path.dirname(os.path.abspath(__file__))
+pseudo_model_path = os.path.join('TVSM', 'inference/models', 'TVSM-pseudo', 'epoch=28-step=67192.ckpt.torch.pt')
 
 def mono_check(audio):
     '''
@@ -197,4 +197,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
     main(args.audio_path, args.output_dir, args.format)
 
-# os.system(f"python me_inference.py --audio_path ../../data/mix_speech_music --format csv")
+# os.system(f"python smd.py --audio_path data/mix_speech_music --format csv")
